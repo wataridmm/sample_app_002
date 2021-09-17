@@ -13,8 +13,6 @@ class TodolistsController < ApplicationController
     @lists = List.all
   end
 
-
-
   private
   def list_params
     params.require(:list).permit(:title, :body)
